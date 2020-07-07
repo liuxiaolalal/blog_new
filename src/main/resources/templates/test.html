@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Thymeleaf demo</title>
+    <title>Test</title>
 </head>
 <body>
 <p>description字段值为：</p>
 <!--/*@thymesVar id="description" type="java.lang.String"*/-->
 <p th:text="${description}">这里显示的是 description 字段内容</p>
+
+<p>友盟测试</p>
+<script>
+    var cnzz_s_tag = document.createElement('script');
+    cnzz_s_tag.type = 'text/javascript';
+    cnzz_s_tag.async = true;
+    cnzz_s_tag.charset = 'utf-8';
+    cnzz_s_tag.src = 'https://s9.cnzz.com/z_stat.php?id=1279055520&web_id=1279055520&async=1';
+    var root_s = document.getElementsByTagName('script')[0];
+    root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+    console.log(cnzz_s_tag);
+    console.log(root_s);
+</script>
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279055520'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279055520' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279055520'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279055520%26online%3D1' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279055520'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279055520%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279055520'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279055520%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<p>ga</p>
+<script>
+    var cnzz_s_tag = document.createElement('script');
+    cnzz_s_tag.type = 'text/javascript';
+    cnzz_s_tag.async = true;
+    cnzz_s_tag.charset = 'utf-8';
+    cnzz_s_tag.src = 'https://www.googletagmanager.com/gtag/js?id=UA-171667779-1&async=1';
+    var root_s = document.getElementsByTagName('script')[0];
+    root_s.parentNode.insertBefore(cnzz_s_tag, root_s);
+    console.log(cnzz_s_tag);
+    console.log(root_s);
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-171667779-1');
+</script>
+
+
+
+
 </body>
+<!--<script th:src="@{http://localhost:8080/data/ma.js}"></script>-->
+<script type="text/javascript">
+    var _maq = _maq || [];
+    _maq.push(['_setAccount', 'web-uuid']);
+
+    (function () {
+        var ma = document.createElement('script');
+        ma.type = 'text/javascript';
+        ma.async = true;
+        ma.src = "http://localhost:8080/data/ma.js";
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ma, s);
+    })();
+</script>
+测试埋点,刷新本页面即可收集数据。
+
+
 </html>
