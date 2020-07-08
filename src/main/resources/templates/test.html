@@ -8,6 +8,12 @@
 <!--/*@thymesVar id="description" type="java.lang.String"*/-->
 <p th:text="${description}">这里显示的是 description 字段内容</p>
 
+<!--文件上传测试-->
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" value="文件上传" />
+</form>
+
 <p>友盟测试</p>
 <script>
     var cnzz_s_tag = document.createElement('script');

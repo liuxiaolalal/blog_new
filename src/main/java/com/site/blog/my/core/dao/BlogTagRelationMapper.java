@@ -21,4 +21,6 @@ public interface BlogTagRelationMapper {
     int updateByPrimaryKeySelective(BlogTagRelation record);
 
     int updateByPrimaryKey(BlogTagRelation record);
+
+    int batchInsert(@Param("relationList") List<BlogTagRelation> blogTagRelationList);
 }
