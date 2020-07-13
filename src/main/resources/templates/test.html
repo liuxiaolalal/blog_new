@@ -14,8 +14,28 @@
     <input type="submit" value="文件上传" />
 </form>
 
+<!--百度统计-->
+<p>百度测试</p>
+<script>
+    console.log("百度统计");
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?99c822263bad3422814a04df731e8d97";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+        console.log(hm);
+        console.log(s);
+    })();
+</script>
+
+
+
+
+
 <p>友盟测试</p>
 <script>
+    console.log("友盟测试");
     var cnzz_s_tag = document.createElement('script');
     cnzz_s_tag.type = 'text/javascript';
     cnzz_s_tag.async = true;
@@ -31,7 +51,7 @@
 <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279055520'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279055520%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
 <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279055520'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1279055520%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 
-<p>ga</p>
+<p>google analytics 测试</p>
 <script>
     var cnzz_s_tag = document.createElement('script');
     cnzz_s_tag.type = 'text/javascript';
@@ -44,8 +64,11 @@
     console.log(root_s);
 </script>
 <script>
+    console.log("-----------");
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){
+        console.log( "arguments :   " + arguments)
+        dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-171667779-1');
 </script>
@@ -55,6 +78,8 @@
 
 </body>
 <!--<script th:src="@{http://localhost:8080/data/ma.js}"></script>-->
+
+测试埋点,刷新本页面即可收集数据。
 <script type="text/javascript">
     var _maq = _maq || [];
     _maq.push(['_setAccount', 'web-uuid']);
@@ -68,7 +93,7 @@
         s.parentNode.insertBefore(ma, s);
     })();
 </script>
-测试埋点,刷新本页面即可收集数据。
+
 
 
 </html>

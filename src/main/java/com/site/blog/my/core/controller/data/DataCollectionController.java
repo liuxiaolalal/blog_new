@@ -31,7 +31,4 @@ public class DataCollectionController {
         ImageIO.write(image,"gif",out);
         out.flush();
     }
-
-
-
 }
